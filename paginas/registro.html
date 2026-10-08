@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Universitario</title>
+</head>
+
+<body>
+
+    <h1>Formulario de Registro Universitario</h1>
+
+    <form>
+
+      <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br><br>
+
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+            <br><br>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <br><br>
+
+            <label>Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <label for="femenino">Femenino</label>
+
+            <input type="radio" id="otro" name="sexo" value="otro">
+            <label for="otro">Otro</label>
+     </fieldset>
+       
+
+        <br>
+
+        <fieldset>
+            <legend>Información de contacto</legend>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            <br><br>
+
+            <label for="direccion">Dirección:</label>
+            <br>
+            <textarea id="direccion" name="direccion" rows="3" cols="40"></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Información académica</legend>
+
+            <label for="universidad">Universidad:</label>
+            <input type="text" id="universidad" name="universidad" required>
+            <br><br>
+
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera" required>
+                <option value="">Seleccione una carrera</option>
+                <option value="ingenieria_sistemas">Ingeniería de Sistemas</option>
+                <option value="ingenieria_civil">Ingeniería Civil</option>
+                <option value="administracion">Administración de Empresas</option>
+                <option value="contabilidad">Contabilidad</option>
+                <option value="derecho">Derecho</option>
+                <option value="medicina">Medicina</option>
+                <option value="enfermeria">Enfermería</option>
+                <option value="software">Gestión y Desarrollo de Software</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="facultad">Facultad:</label>
+            <select id="facultad" name="facultad">
+                <option value="">Seleccione una facultad</option>
+                <option value="ingenieria">Facultad de Ingeniería</option>
+                <option value="economia">Facultad de Economía</option>
+                <option value="derecho">Facultad de Derecho</option>
+                <option value="medicina">Facultad de Medicina</option>
+                <option value="humanidades">Facultad de Humanidades</option>
+                <option value="ingenieria">Facultad de Ingeniería de Sistemas Computacionales</option>
+            </select>
+
+            <br><br>
+
+            <label for="semestre">Semestre:</label>
+            <select id="semestre" name="semestre">
+                <option value="">Seleccione</option>
+                <option value="1">Primer semestre</option>
+                <option value="2">Segundo semestre</option>
+                <option value="3">Tercer semestre</option>
+                <option value="4">Cuarto semestre</option>
+                <option value="5">Quinto semestre</option>
+                <option value="6">Sexto semestre</option>
+                <option value="7">Séptimo semestre</option>
+                <option value="8">Octavo semestre</option>
+                <option value="9">Noveno semestre</option>
+                <option value="10">Décimo semestre</option>
+            </select>
+
+            <br><br>
+
+            <label for="turno">Turno:</label>
+            <input type="radio" id="diurno" name="turno" value="diurno">
+            <label for="diurno">Diurno</label>
+
+            <input type="radio" id="nocturno" name="turno" value="nocturno">
+            <label for="nocturno">Nocturno</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Información adicional</legend>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad">
+            <br><br>
+
+            <label for="modalidad">Modalidad de estudio:</label>
+            <select id="modalidad" name="modalidad">
+                <option value="">Seleccione</option>
+                <option value="presencial">Presencial</option>
+                <option value="virtual">Virtual</option>
+                <option value="hibrida">Híbrida</option>
+            </select>
+
+            <br><br>
+
+            <label for="comentarios">Comentarios:</label>
+            <br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+
+            <br><br>
+
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">
+                Acepto los términos y condiciones
+            </label>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Registrar">
+        <input type="reset" value="Limpiar">
+
+    </form>
+
+</body>
+</html>
